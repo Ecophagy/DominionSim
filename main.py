@@ -1,10 +1,11 @@
 from models.board import Board
+from simulators.first_shuffle_collision import FirstShuffleCollisions
 from simulators.opening_hands import OpeningHands
 
 
 def main():
     board = Board()
-    sim = OpeningHands(board)
+    sim = FirstShuffleCollisions(board)
     runs = 100000
 
     for i in range(runs):
